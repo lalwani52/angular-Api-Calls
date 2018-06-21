@@ -1,0 +1,28 @@
+<title>Login Page</title>
+<div class="col-md-6 col-md-offset-3">
+
+    <h2>Login</h2>
+    <form>
+	
+        <div class="form-group" >
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" class="form-control" ng-model="username" required />
+
+        </div>
+        <div class="form-group" >
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" class="form-control" ng-model="password" required />
+            
+        </div>
+		<div class="alert-danger fade in" id="invalidcreds">
+		</div>
+        <div class="form-actions">
+            <button ng-click='submit()' class="btn btn-primary">Login</button>
+            <a href="" class="btn btn-link">Register</a>
+        </div>
+		
+    </form>
+
+	
+</div>
+
